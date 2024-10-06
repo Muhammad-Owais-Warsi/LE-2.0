@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-input:focus {
+    border-color: #337AB7 !important; /* Set border color on focus */
+    box-shadow: 0 0 0 0.2rem rgba(51, 122, 183, 0.25); /* Optional: Add shadow for better visibility */
+}
+.custom-input {
+    border: 1px solid #ced4da; /* Default border color */
+    transition: border-color 0.3s; /* Smooth transition effect */
+}
