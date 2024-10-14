@@ -6,7 +6,8 @@ export default function App() {
   return (
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<LeaveApplicationPage/>}/>
+          <Route path="/" element={<StudentLogin/>}/>
+          <Route path="/leave-application" element={<LeaveApplicationPage/>}/>
         </Routes>
       </BrowserRouter>
   );
