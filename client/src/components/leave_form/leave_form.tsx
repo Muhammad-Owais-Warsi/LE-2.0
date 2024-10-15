@@ -4,7 +4,7 @@ import { getLocalTimeZone, today } from "@internationalized/date";
 import User from "../../icons/user";
 import File from "../../icons/file";
 import Close from "../../icons/close";
-import { form_data } from "../../types/form_data";
+import { form_data } from "../../types/leave_form_data";
 
 const FormValues = {
   StudentImage: "",
@@ -30,6 +30,7 @@ export default function LeaveApplicationForm() {
 
   const [formData, setFormData] = useState<form_data>(FormValues);
   const [isSubmit,setIsSubmit] = useState<boolean>(false);
+  
 
   const handleForm = (e: any) => {
     const { name, value } = e.target;
@@ -66,16 +67,18 @@ export default function LeaveApplicationForm() {
   }
 
   useEffect(() => {
-    console.log(formData)
+    console.log("submit:",formData)
     setFormData(FormValues)
   }, [isSubmit])
+
+
 
   return (
     <div className="min-h-screen flex justify-center items-center">
       <div className="bg-transparent w-full lg:w-[90vw] p-8">
         <h1 className="text-3xl font-bold text-center mb-8 mt-11">Leave Application Form</h1>
 
-        <form className="">
+        <form onSubmit={handleSubmit}>
           <div className="flex flex-col items-center lg:col-span-2 mb-6">
             <div className="rounded-full h-20 w-20 bg-gray-200 flex items-center justify-center overflow-hidden">
               {formData.StudentImage ? (
