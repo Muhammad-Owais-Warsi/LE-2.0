@@ -8,8 +8,8 @@ const FormValues = {
     StudentImage: "",
     StudentName: "",
     StudentEmail: "",
+    StudentPassword: "",
     StudentRegisterNumber: "",
-    CollegeName: "",
     Department: "",
     Section: "",
 
@@ -113,6 +113,16 @@ export default function StudentRegisterForm() {
                             />
                             <Input
                                 isRequired
+                                type="password"
+                                label="Register Number"
+                                labelPlacement="outside"
+                                placeholder="Enter your password"
+                                name="StudentPassword"
+                                value={formData.StudentPassword}
+                                onChange={handleForm}
+                            />
+                            <Input
+                                isRequired
                                 label="Register Number"
                                 labelPlacement="outside"
                                 placeholder="Enter your register number"
@@ -128,14 +138,6 @@ export default function StudentRegisterForm() {
 
                     <div className="w-full">
                         <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                            <Input
-                                isRequired
-                                label="College Name"
-                                labelPlacement="outside"
-                                placeholder="College name"
-                                name="CollegeName"
-                                onChange={handleForm}
-                            />
                             <Input
                                 isRequired
                                 label="Department"
