@@ -5,7 +5,7 @@ export default function DashboardPersonal() {
     const details = [
         {
             name: "Student Name",
-            value: "MO Warsi"
+            value: "Muhammad Owais Warsi"
         },
         {
             name: "Student ID",

@@ -21,6 +21,7 @@ const FormValues = {
   TimeIn: "",
   Reason: "",
   CollegeName: "",
+  CollegeYear: "",
   Department: "",
   Section: "",
   LeaveProof: "",
@@ -29,8 +30,8 @@ const FormValues = {
 export default function LeaveApplicationForm() {
 
   const [formData, setFormData] = useState<form_data>(FormValues);
-  const [isSubmit,setIsSubmit] = useState<boolean>(false);
-  
+  const [isSubmit, setIsSubmit] = useState<boolean>(false);
+
 
   const handleForm = (e: any) => {
     const { name, value } = e.target;
@@ -57,7 +58,7 @@ export default function LeaveApplicationForm() {
     });
   };
 
-  const handleSubmit = (e:any) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     setIsSubmit(true);
   }
@@ -67,7 +68,7 @@ export default function LeaveApplicationForm() {
   }
 
   useEffect(() => {
-    console.log("submit:",formData)
+    console.log("submit:", formData)
     setFormData(FormValues)
   }, [isSubmit])
 
@@ -240,6 +241,14 @@ export default function LeaveApplicationForm() {
                   labelPlacement="outside"
                   placeholder="College name"
                   name="CollegeName"
+                  onChange={handleForm}
+                />
+                <Input
+                  isRequired
+                  label="Year"
+                  labelPlacement="outside"
+                  placeholder="College Year"
+                  name="CollegeYear"
                   onChange={handleForm}
                 />
                 <Input

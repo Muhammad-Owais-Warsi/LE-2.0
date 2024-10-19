@@ -15,6 +15,7 @@ export interface form_data {
     TimeIn: string;
     Reason: string;
     CollegeName: string;
+    CollegeYear:string;
     Department: string;
     Section: string;
     LeaveProof: string;

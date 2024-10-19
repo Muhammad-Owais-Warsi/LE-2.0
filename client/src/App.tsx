@@ -4,6 +4,7 @@ import MainLayout from "./components/main/main_layout";
 import LeaveApplicationPage from "./components/leave_form/leave_application_page";
 import StudentRegisterPage from "./components/student_registration/student_register_page";
 import DashboardPage from "./components/dashboard/dashboard_page";
+import ApplicationStatusPage from "./components/application_status/application_status_page";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route element={<MainLayout />}>
           <Route path="/leave-application" element={<LeaveApplicationPage />} />
           <Route path="/dashboard" element={<DashboardPage />} />
+          <Route path="/status" element={<ApplicationStatusPage/>} />
         </Route>
 
       </Routes>

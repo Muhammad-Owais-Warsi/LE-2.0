@@ -88,8 +88,8 @@ export default function Sidebar() {
                         <li className="mb-4 flex justify-start items-center gap-4">
                             <Status className="w-5 h-5" />
                             <button
-                                onClick={() => handleNavigate('/personal-details')}
-                                className={`${isActive('/personal-details')} hover:text-black`}
+                                onClick={() => handleNavigate('/status')}
+                                className={`${isActive('/status')} hover:text-black`}
                             >
                                 Leave Status
                             </button>

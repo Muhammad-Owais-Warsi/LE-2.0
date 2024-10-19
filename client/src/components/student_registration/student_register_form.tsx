@@ -1,5 +1,5 @@
 import { Input, Button } from "@nextui-org/react"
-import { useState, ChangeEvent} from "react"
+import { useState, ChangeEvent } from "react"
 import { register_form_data } from "../../types/register_form_data"
 import User from "../../icons/user";
 import Close from "../../icons/close";
@@ -20,7 +20,7 @@ export default function StudentRegisterForm() {
 
 
     const [formData, setFormData] = useState<register_form_data>(FormValues);
-    const [isSubmit,setIsSubmit] = useState<boolean>(false);
+    const [isSubmit, setIsSubmit] = useState<boolean>(false);
 
     const handleForm = (e: any) => {
         const { name, value } = e.target;
@@ -131,13 +131,6 @@ export default function StudentRegisterForm() {
                                 onChange={handleForm}
                             />
 
-                        </div>
-                    </div>
-
-
-
-                    <div className="w-full">
-                        <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                             <Input
                                 isRequired
                                 label="Department"
@@ -154,8 +147,13 @@ export default function StudentRegisterForm() {
                                 name="Section"
                                 onChange={handleForm}
                             />
+
                         </div>
                     </div>
+
+
+
+
                 </div>
                 <div className="w-full mt-8">
                     <hr className="w-full" />
