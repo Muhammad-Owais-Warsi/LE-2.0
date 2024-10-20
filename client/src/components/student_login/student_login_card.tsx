@@ -38,7 +38,7 @@ export default function StudentLoginCard() {
 
                     {/* Login Button */}
                     <Button variant="solid" color="primary" size="lg" className="w-full">
-                        Login
+                        Login 
                     </Button>
                 </div>
             </div>

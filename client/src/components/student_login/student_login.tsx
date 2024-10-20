@@ -3,7 +3,7 @@ import StudentLoginCard from "./student_login_card";
 export default function StudentLogin() {
   return (
     <div className="flex flex-col justify-center items-center space-y-6 rounded-sm">
- 
+
       <div>
         <img src="https://sp.srmist.edu.in/srmiststudentportal/resources/Image/srmist.jpg" alt="srm-logo" className="w-40 h-auto lg:scale-150 mt-7" />
       </div>
@@ -16,17 +16,14 @@ export default function StudentLogin() {
             <strong>Dear Student,</strong>
           </p>
           <p className="mb-4">
-            Welcome to SRMIST STUDENT PORTAL. You can access the student portal
-            to know your academic and financial details, etc.
+            Welcome to the SRMIST Leave Application Portal. You can access this portal to apply for leave, track your application status, and view past requests.
           </p>
           <p className="mb-4">
-            SRMIST students can login with NetID credentials. (i.e. If your
-            email id is <strong>abcd@srmist.edu.in</strong>, your NetID is
-            <strong> abcd</strong> & password will be your email password.)
+            SRMIST students can log in using their credentials. (i.e., Your college email id <strong>abcd@srmist.edu.in</strong> & your password.)
           </p>
         </div>
 
-  
+
         <div>
           <StudentLoginCard />
         </div>

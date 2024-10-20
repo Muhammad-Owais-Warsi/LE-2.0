@@ -22,7 +22,7 @@ export default {
               DEFAULT: "rgb(51,122,183)",
               foreground: "rgb(255,255,255)",
             },
-            focus: "#BEF264",
+            focus: "rgb(51,122,183)",
           },
         },
       },
